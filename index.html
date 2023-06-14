@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="index.js" defer></script>
+        <title>Tip calculator</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="title">Сколько на Чай?</h1>
+            <form id="form" class="form">
+                <div class="form-field form-with-icon">
+                    <label for="inputBill" class="label">Общая сумма</label>
+                    <img class="icon" src="imgs/ruble.svg" alt="">
+                    <input id="inputBill" class="input" type="number">
+                </div>
+                <div class="form-field form-with-icon">
+                    <label for="inputGuests" class="label">Количество гостей</label>
+                    <img class="icon" src="imgs/human.svg" alt="">
+                    <input id="inputGuests" class="input" type="number">
+                </div>
+                <div class="form-field">
+                    <label for="serviceQuality" class="label">Качество обслуживания</label>
+                    <select class="input select" name="serviceQuality" id="serviceQuality">
+                        <option value="30">30% - Великолепно</option>
+                        <option value="20">20% - Хорошо</option>
+                        <option value="15">15% - Нормально</option>
+                        <option value="10">10% - Плохо</option>
+                        <option value="5">5% - Ужасно</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit" class="btn">подсчитать</button>
+            </form>
+            <div id="pop-up-window" class="pop-up-window">
+                <p class="pop-up-mes">
+                    <!-- заполните все поля -->
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
